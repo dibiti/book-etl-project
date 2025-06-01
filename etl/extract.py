@@ -17,6 +17,7 @@ def extract_books():
         #print(f"Extracting page {page}...")
         url = url_base.format(page)
         res = requests.get(url)
+        res.encoding = 'utf-8' 
 
         #Skip the page if request fails
         if res.status_code != 200:
