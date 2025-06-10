@@ -13,7 +13,7 @@ def extract_books():
     url_base = "http://books.toscrape.com/catalogue/page-{}.html"
     books = []
 
-    # Iterate over all 50 catalog pages
+    # Iterate over all 5 catalog pages (for dev reasons)
     for page in range(1, 6):
         #print(f"Extracting page {page}...")
         url = url_base.format(page)
